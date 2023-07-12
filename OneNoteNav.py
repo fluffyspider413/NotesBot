@@ -2,6 +2,7 @@ import json
 import win32com.client
 from xml.etree import _elementtree
 
+
 onapp = win32com.client.gencache.EnsureDispatch('OneNote.Application')
 NS = "{http://schemas.microsoft.com/office/onenote/2010/onenote}"
 
@@ -9,7 +10,7 @@ NS = "{http://schemas.microsoft.com/office/onenote/2010/onenote}"
 
 #Returns the Notebook Hierarchy as JSON
 def getHierarchyJson():
-    return(json.dumps(getHierarchy(), indent=4))
+     return(json.dumps(getHierarchy(), indent=4))
 
 
 
